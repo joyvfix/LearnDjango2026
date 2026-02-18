@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 # Create your views here.
-def about2(request):
+def blog2(request):
     return render (request,'blog.html')
