@@ -14,7 +14,18 @@
         <li>Materi: Python & Django</li>
         <li>Tujuan: Membuat website dinamis</li>
     </ul>
+<h1>Halaman About</h1>
 
+    <p>Nama Kelas: {{ nama_kelas }}</p>
+    <p>Jumlah Siswa: {{ jumlah_siswa }}</p>
+
+    {% if aktif %}
+        <p>Status: Kelas sedang aktif ✅</p>
+    {% else %}
+        <p>Status: Kelas tidak aktif ❌</p>
+    {% endif %}
+
+    <br>
     <a href="/">Kembali ke Home</a>
      <li><a href="/blog/">Blog</a></li>
              <li><a href="/">Home</a></li>
